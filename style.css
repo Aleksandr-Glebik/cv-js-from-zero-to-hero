@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 /*
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
@@ -7,66 +6,56 @@ font-weight: 700;
 font-style: italic;
 font-style: normal;
 */
-
 :root {
     --main: black;
     --blue-dark:  rgb(15, 170, 209);
     --blue-light:  rgb(1, 190, 237);
 }
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-size: 10px;
 }
-
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
 }
-
 .header {
     width: 100%;
     height: 8rem;
     background-color: rgb(248, 248, 248);
     padding: 0 2rem;
     margin-top: 0.5rem;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
 .header-content {
     width: 35%;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-
-.header-icon::before {
+.icon {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.header-icon::before {
     margin-right: 2rem;
 }
-
 .rocket::before {
-    font-family: "Font Awesome 5 Free";
     font-size: 5rem;
-    font-weight: 900; content: "\f135";
+    content: "\f135";
     color: var(--main);
 }
-
 .header-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -74,11 +63,9 @@ html {
     letter-spacing: 1px;
     font-size: 3rem;
 }
-
 .header-nav {
     width: 65%;
 }
-
 .header-nav__list {
     display: flex;
     justify-content: flex-start;
@@ -87,32 +74,115 @@ html {
 
     list-style-type: none;
 }
-
-.header-nav__item {
-
-}
-
 .header-nav__link {
     text-decoration: none;
-
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 2.4rem;
     color: var(--main);
     cursor: pointer;
-
     transition: all ease-in-out .45s;
 }
-
 .header-nav__link:hover {
     color: var(--blue-light);
 }
-
 .header-nav__link:focus {
     color: var(--blue-dark);
 }
-
 .header-nav__link:active {
     color: var(--blue-dark);
 }
+.main {
+    width: 100%;
+    display: flex;
+
+}
+.info {
+    width: 30%;
+    height: 500px;
+    background-color: rgb(183, 183, 183);
+}
+.info-content {
+    background-color: rgb(201, 201, 201);
+    padding: 2rem;
+}
+.info__foto {
+    width: 100%;
+}
+.info-icon::before {
+    font-size: 3.5rem;
+    /* color: var(--blue-light); */
+    color: var(--main);
+    margin-right: 1.5rem;
+    cursor: pointer;
+
+    transition: all ease-in-out .45s;
+}
+.info-icon:hover::before {
+    color: var(--blue-light);
+}
+.info-icon:focus::before {
+    color: var(--blue-dark);
+}
+.info-icon:active::before {
+    color: var(--blue-dark);
+}
+.info-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3rem;
+    /* color: var(--blue-light); */
+    color: var(--main);
+}
+.info-list {
+    list-style-type: none;
+}
+.info-list__item {
+    margin: 1rem 0;
+}
+.planet::before {
+    content: "\f7a2";
+}
+.phone::before {
+    content: "\f098";
+}
+.linkedin::before {
+    content: "\f0c1";
+}
+.mail::before {
+    content: "\40";
+}
+.git::before {
+    content: "\f126";
+}
+.discord::before {
+    content: "\f086";
+}
+.info-list__link {
+    text-decoration: none;
+    font-size: 2.5rem;
+    /* color: var(--blue-light); */
+    color: var(--main);
+    cursor: pointer;
+
+    transition: all ease-in-out .45s;
+}
+.info-list__link:hover {
+    color: var(--blue-light);
+    transform: scale(1.05);
+}
+.info-list__link:focus {
+    color: var(--blue-dark);
+}
+.info-list__link:active {
+    color: var(--blue-dark);
+}
+
+.desc {
+    width: 70%;
+    height: 500px;
+    background-color: rgb(201, 201, 201);
+}
+
