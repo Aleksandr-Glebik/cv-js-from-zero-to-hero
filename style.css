@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-weight: 700;
-font-style: italic;
-font-style: normal;
-*/
 :root {
     --main: black;
     --blue-dark:  rgb(15, 170, 209);
@@ -20,6 +13,7 @@ font-style: normal;
 }
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 .wrapper {
     max-width: 1280px;
@@ -267,3 +261,21 @@ html {
   .projects__link {
     text-decoration: none;
   }
+  .footer {
+        width: 100%;
+        height: 6rem;
+        background-color: var(--background-grey-light);
+        padding: 0 2rem;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--main);
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 1px;
+        font-size: 2rem;
+}
