@@ -1,0 +1,1 @@
+deploy: https://aleksandr-glebik.github.io/cv-js-from-zero-to-hero/
